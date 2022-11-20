@@ -1,0 +1,46 @@
+﻿@page
+@model IndexModel
+@{
+    Layout = null;
+    ViewData["Title"] = "Home page";
+}
+<head>
+
+</head>
+<body>
+
+
+<div class="text-center">
+    <h1 class="display-4">Вітаємо. Задача 24. Використання низькорівневих API</h1>
+    <p>Задача 1. <a href="https://developer.mozilla.org/ru/docs/Web/API/File">https://developer.mozilla.org/ru/docs/Web/API/File </a></p>
+    <p>Після вибору файлу ви побачите його назву, час та дату останнього редагування, розмір, тип</p>
+    <input type="file" id="Input1" name="Input1"/>
+
+    <p>Задача 2. WebAssembly. Для перевірки відкрийте консоль</p
+
+
+    <p>Задача 3. Web RTC API</p> 
+</div>
+<div class="controlbox">
+    <button id="connectButton" name="connectButton" class="buttonleft">
+      Connect
+    </button>
+    <button id="disconnectButton" name="disconnectButton" class="buttonright" disabled>
+      Disconnect
+    </button>
+  </div>
+  
+  <div class="messagebox">
+    <label for="message">Enter a message:
+      <input type="text" name="message" id="message" placeholder="Message text" 
+              inputmode="latin" size=60 maxlength=120 disabled>
+    </label>
+    <button id="sendButton" name="sendButton" class="buttonright" disabled>
+      Send
+    </button>
+  </div>
+  <div class="messagebox" id="receivebox">
+    <p>Messages received:</p>
+  </div>
+<script src="~/js/site.js"></script>
+</body>
